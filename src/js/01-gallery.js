@@ -8,8 +8,6 @@ import { galleryItems } from './gallery-items';
 
 console.log(galleryItems);
 
-
-
 const galleryRef = document.querySelector('.gallery');
 
 galleryRef.innerHTML = createMarkup(galleryItems);
