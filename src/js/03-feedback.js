@@ -14,10 +14,10 @@ const formData = {
 formRef.addEventListener('submit', onFormSubmit);
 formRef.addEventListener('input', throttle(onTextareaInput, 500));
 
-// formRef.addEventListener('input', e => {
-//     console.log(`e.target.name`, e.target.name);
-//     console.log(`e.target.value`, e.target.value);
-// })
+
+formRef.addEventListener('submit', e => {
+    console.log(`formData`, formData);
+})
 
 addTextarea();
 
